@@ -43,6 +43,11 @@ Installation
 
 See 'INSTALL'.
 
+Authors
+=======
+
+See 'AUTHORS' and 'THANKS'.
+
 Licenses and Copyrights
 =======================
 
@@ -54,11 +59,6 @@ See individual files for more information.
 MakePAK is licensed under the GNU General Public License version 3 or later. It
 grants you the right to:
  A. run the program for any purpose;
-
-Authors
-=======
-
-See 'AUTHORS' and 'THANKS'.
  B. modify the program in any way;
  C. redistribute the program in original form, even with a fee; and
  D. redistribute the program in modified form, even with a fee;
