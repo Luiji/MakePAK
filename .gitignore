@@ -1,0 +1,38 @@
+# Files to ensure Git never uploads
+# Note: Never do 'git add .', because there might be files not covered here.
+# Running 'make mostlyclean' should remove most files not covered here.
+
+# Autotools-generated files
+build-aux
+Makefile
+Makefile.in
+INSTALL
+.deps
+aclocal.m4
+autom4te.cache
+configure
+configure.cache
+config.log
+config.status
+config.h.in
+config.h
+stamp-h1
+makepak-*
+*.o
+*.a
+*~
+src/pak
+man/pak.1
+doc/pak.dvi
+doc/pak.pdf
+doc/pak.ps
+doc/pak.html
+doc/pak.info
+
+# Gettext
+ABOUT-NLS
+intl/
+
+# gnulib
+lib
+m4

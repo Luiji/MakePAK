@@ -1,0 +1,66 @@
+MakePAK
+*******
+
+     Copyright (C) 2011 Entertaining Software, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  This file is offered as-is,
+     without any warranty.
+
+MakePAK is a command-line tool for the creation of Quake .PAK files.
+
+Visit our website at http://www.github.com/Luiji/MakePAK.
+
+Requirements
+============
+
+The package has no external dependencies. The binary can function stand-alone.
+
+Compiling
+---------
+
+When compiling, you need the Bourne Shell, Make, and a C compiler.
+
+Git Compiling
+-------------
+
+You need Autoconf, Automake, and Gnulib. Texinfo and help2man are optional.
+
+Autoconf: http://www.gnu.org/software/autoconf
+Automake: http://www.gnu.org/software/automake
+Gnulib:   http://www.gnu.org/software/gnulib
+Texinfo:  http://www.gnu.org/software/texinfo
+help2man: http://www.gnu.org/software/help2man
+
+Quake .PAK Format
+=================
+
+See 'FORMAT'.
+
+Installation
+============
+
+See 'INSTALL'.
+
+Licenses and Copyrights
+=======================
+
+All files in this distribution are subject to one or more of these Copyrights:
+     Copyright (C) Entertaining Software, Inc.
+     Copyright (C) Free Software Foundation, Inc.
+See individual files for more information.
+
+MakePAK is licensed under the GNU General Public License version 3 or later. It
+grants you the right to:
+ A. run the program for any purpose;
+
+Authors
+=======
+
+See 'AUTHORS' and 'THANKS'.
+ B. modify the program in any way;
+ C. redistribute the program in original form, even with a fee; and
+ D. redistribute the program in modified form, even with a fee;
+As long as you never remove such rights when distributing it to others. For more
+information on the exact terms of the GNU GPL, see 'COPYING'.

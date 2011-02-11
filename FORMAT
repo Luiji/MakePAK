@@ -1,0 +1,94 @@
+Format Specification
+********************
+
+     Copyright (C) 2011 Entertaining Software, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  This file is offered as-is,
+     without any warranty.
+
+Header
+  (4 bytes, chars) signature 'PACK'
+  (4 bytes, unsigned int) directory offset
+  (4 bytes, unsigned int) directory length
+
+Directory
+  (56 bytes, chars) file name
+  (4 bytes, unsigned int) file offset
+  (4 bytes, unsigned int) file length
+
+Quake .PAK format is written in little-endian format.
+
+Directories
+===========
+
+Directories are simply part of the file name. The path seperator used by the
+format is "/". Paths may or may not be prefixed with a "/".
+
+Comments
+========
+
+*** Luiji Maryo: ***************************************************************
+This is a beautiful archive format, even better than .TAR. I find the only issue
+is the limititations of 56-character filenames and 4-byte file position/length
+parameters. I was actually creating my own format until I discovered this via
+PhysicsFS. All I needed was a utility to create the archives...
+********************************************************************************
+
+An interesting thing to note is that the most likely reason that the limit to
+file names is 56 bytes is because 56 + 4 + 4 = 64 bytes per entry, a nice power-
+of-two number. This has not been verified by the creators of the .PAK format as
+far as I know.
+
+Tips
+====
+
+If you can, you should store the Directory at the end of the file so that file
+offsets will not be effected by the ever-expanding directory. This is similar to
+how the .ZIP format functions.
+
+Why .PAK?
+=========
+
+I find the best way to explain Why .PAK? is by comparing to its two top
+competitors: .ZIP and .TAR.
+
+.ZIP
+----
+
+Pretty similar to .PAK, but with built-in compression. Why not .ZIP? Built-in
+compression. Compressing 2KB of data usually is not worth it, but the main
+reason I am against .ZIP is because either I have a limited set of supported
+algorithms in my .ZIP reader or I have too much bulk in my library because I
+support so many algorithms.
+
+.TAR
+----
+
+This one's pretty simple: .TAR is not meant for pulling out single files. .TAR
+is meant to be completely decompressed. The main feature of this is that there
+is no quick-to-access index for us to use. No, .TAR has the format [HEAD][BODY]
+[HEAD][BODY][HEAD][BODY][ETC.] which means to find a file you have to search the
+entire file, not just a short Directory like .PAK has!
+
+Limitations
+===========
+
+The most obvious limitation is that file names cannot be more than 56
+characters. Other than that, the highest position the Directory can refer to is
+4294967295, and the largest any file can be is 4294967295 B (4 GiB), which is
+actually more than just about anybody wouuld need.
+
+Origins
+=======
+
+The .PAK format originates from the video game Quake, which popularized several
+advances in 3-D game technology, such as polygonal models instead of prerendered
+sprites and truley 3-D level design with the ability to look up and down instead
+of 2.5-D.
+
+The popularization of the format comes from the reusability of the Quake engine,
+allowing users to create their own "mods" -- MODificationS -- and the releasing
+of Quake's source code by id Software leading to many clones and modifications
+of the engine.

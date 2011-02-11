@@ -1,0 +1,35 @@
+MakePAK Thanks
+**************
+
+     Copyright (C) 2011 Entertaining Software, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  This file is offered as-is,
+     without any warranty.
+
+The following people and projects have made contributions to MakePAK, either
+directly or indirectly:
+
+People
+======
+
+Pete McCormick <petra@force.net>: Provided documentation on the .PAK format.
+Note that the contents of 'FORMAT' were NOT written by Pete McCormick.
+
+Ryan C. Gordon <icculus@icculus.org>: Answered many questions I had about the
+.PAK format and helped me determine what was wrong with the outputted .PAK files
+early on in development.
+
+Projects
+========
+
+Gnulib <http://gnu.org/software/gnulib>: Provides tons of super awesome
+functions and portability helpers.
+
+GNU Hello <http://gnu.org/software/hello>: For providing information on how to
+make a GNU Package (although this is not a GNU Package, the information was used
+to properly integrate Gnulib and the Autotools).
+
+PhysicsFS <http://icculus.org/physfs/>: For providing a library for reading the
+.PAK files that were being outputted to make sure they were actually readable.

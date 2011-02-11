@@ -1,0 +1,167 @@
+\input texinfo @c -*-texinfo-*-
+@c %**start of header
+@setfilename pak.info
+@include version.texi
+@settitle MakePAK @value{VERSION}
+@c op = options
+@defcodeindex op
+@syncodeindex op cp
+@syncodeindex pg cp
+@c %**end of header
+
+@copying
+This manual is for MakePAK (version @value{VERSION}, @value{UPDATED}), which is
+a tool for creating Quake .PAK archives.
+
+Copyright @copyright{} 2011 Entertaining Software, Inc.
+
+@quotation
+@end quotation
+@end copying
+
+@dircategory Archiving
+@direntry
+* pak: (pak)Invoking pak.
+@end direntry
+
+@titlepage
+@title MakePAK
+@subtitle for version @value{VERSION}, @value{UPDATED}
+@author Luiji Maryo (@email{luiji@@users.sourceforge.net})
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@contents
+
+@ifnottex
+@node Top
+@top MakePAK
+
+This manual is for MakePAK (version @value{VERSION}, @value{UPDATED}).
+@end ifnottex
+
+@menu
+* Overview:: General purpose and information.
+* Invoking pak:: Invoking the MakePAK utility.
+* Reporting bugs:: Sendign bug reports, feature suggestions, and patches.
+* GNU Free Documentation License:: Terms for copying this document.
+* Concept index:: Index of concepts, programs, options, etc.
+@end menu
+
+@node Overview
+@chapter Overview
+
+@cindex greetings
+@cindex overview
+
+The MakePAK program (@url{http://github.com/Luiji/MakePAK/}) archives specified
+files into a single Quake .PAK archive.
+
+@node Invoking pak
+@chapter Invoking @command{pak}
+
+@pindex pak
+@cindex invoking
+@cindex options
+@cindex usage
+@cindex help
+
+The format for running the @command{pak} program is:
+
+@example
+pak @var{option} @dots{} @var{file} @dots{}
+@end example
+
+With no options, @command{pak} says "no input files" and sets exit status to 1.
+
+@command{pak} supports the following options:
+
+@table @option
+@item --help
+@itemx -h
+@opindex --greeting
+@opindex -g
+Print an information help message on standard output and then exit successfully.
+
+@item --version
+@itemx -v
+@opindex --version
+@opindex -v
+Print the version number and licensing information of MakePAK on standard output
+and then exit successfully.
+
+@item --output
+@itemx -o
+@opindex --output
+@opindex -o
+Set file to output .PAK file contents. You can also redirect the output on some
+shells with standard output redirection.
+
+@item --recursive
+@itemx -r
+@opindex --recursive
+@opindex -r
+When a directory is specified, add all of the files within it recursively
+instead of skipping it as usual.
+
+@item --verbose
+@itemx -V
+@opindex --verbose
+@opindex -V
+List each file as it is added.
+
+@end table
+
+If @option{-o}/@option{--option} is specified multiple times, the later calls
+will take precendence.
+
+@node Reporting bugs
+@chapter Reporting bugs
+
+@cindex bug reporting
+@cindex problems
+@cindex reporting bugs
+
+To report bugs or suggest enhancements for MakePAK, please either send
+electronic mail to @email{luiji@@users.sourceforge.net} or, preferably, use the
+bug/feature request tracker at @url{http://github.com/Luiji/MakePAK/issues/}.
+
+@cindex checklist for bug reports
+For bug reports, please include enough information for the maintainers to
+reproduce the problem. Generally speaking, that means:
+
+@itemize @bullet
+@item The version number of MakePAK (which you can find by running
+      @w{@samp{pak --version}}) and any other program(s) or manual(s) involved.
+@item Hardware and operating system names and versions.
+@item The contents of any input files necessary to reproduce the bug.
+@item The expected behavior and/or output.
+@item A description of the problem and samples of any erroneous output.
+@item Options you gave to @command{configure} other than specifying installation
+      directories.
+@item Exact modifications that you have done to MakePAK, if any.
+@item Anything else that you think would be useful.
+@end itemize
+
+When in doubt whether something is needed or not, include it. It is better to
+include too much than to leave out something important.
+
+@cindex patches, contributing
+Patches are welcome; if possible, please make them with @samp{@w{diff -c}}
+(@pxref{Top,, Overview, diff, Comparing and Merging Files}). Do @strong{not} add
+entries to the @file{ChangeLog}, as it is generated from the Git commit history
+during releases.
+
+@node GNU Free Documentation License
+@appendix GNU Free Documentation License
+
+@include fdl.texi
+
+@node Concept index
+@unnumbered Concept index
+
+@printindex cp
+
+@bye
