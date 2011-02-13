@@ -27,7 +27,7 @@ Summary: Tool for creating Quake .PAK files
 License: GPLv3+
 URL: https://github.com/Luiji/MakePAK
 Group: Productivity/Archiving/Backup
-Source0: https://github.com/downloads/Luiji/MakePAK/makepak-0.0.0.tar.xz
+Source0: https://github.com/downloads/Luiji/MakePAK/makepak-0.0.0.tar.gz
 BuildRequires: pkgconfig
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
