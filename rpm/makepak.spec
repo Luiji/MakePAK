@@ -16,6 +16,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
+# Some systems like Fedora terminate because /usr/share/info/dir is not packaged
+# even though it would appear they are not supposed to be added.
+%define _unpackaged_files_terminate_build 0
+
 %define name makepak
 %define version 0.0.0
 %define release 1
