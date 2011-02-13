@@ -33,6 +33,8 @@ URL: https://github.com/Luiji/MakePAK
 Group: Productivity/Archiving/Backup
 Source0: https://github.com/downloads/Luiji/MakePAK/makepak-0.0.0.tar.gz
 BuildRequires: pkgconfig
+Requires(post): info
+Requires(preun): info
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -44,14 +46,11 @@ along with PhysicsFS (http://icculus.org/physfs/).
 %prep
 %setup -q
 
-%pre
-%info_del pak.info
-
 %post
-%info_add pak.info
+%install_info --info-dir=%{_infodir} %{_infodir}/%{name}.info*
 
-%postun
-%info_del pak.info
+%preun
+%install_info_delete --info-dir=%{_infodir} %{_infodir}/%{name}.info*
 
 %build
 %configure
