@@ -1,0 +1,9 @@
+Source: makepak
+Section: utils
+Priority: optional
+Maintainer: Luiji Maryo <luiji@users.sourceforge.net>
+Build-Depends: debhelper (>= 4.1.16), pkg-config
+
+Package: makepak
+Architecture: any
+Description: MakePAK is a command-line tool for the creation of Quake .PAK files.
