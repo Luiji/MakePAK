@@ -45,7 +45,7 @@ This manual is for MakePAK (version @value{VERSION}, @value{UPDATED}).
 @menu
 * Overview:: General purpose and information.
 * Invoking pak:: Invoking the MakePAK utility.
-* Reporting bugs:: Sendign bug reports, feature suggestions, and patches.
+* Reporting bugs:: Sending bug reports, feature suggestions, and patches.
 * GNU Free Documentation License:: Terms for copying this document.
 * Concept index:: Index of concepts, programs, options, etc.
 @end menu
