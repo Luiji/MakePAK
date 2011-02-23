@@ -28,6 +28,8 @@ doc/pak.pdf
 doc/pak.ps
 doc/pak.html
 doc/pak.info
+doc/stamp-vti
+doc/version.texi
 
 # Gettext
 ABOUT-NLS
