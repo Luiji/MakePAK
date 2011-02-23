@@ -46,11 +46,9 @@ AC_C_BIGENDIAN(
   AC_DEFINE([ENCODE_BIG_ENDIAN], 1, [Is the current CPU is big-endian?]),
   AC_DEFINE([ENCODE_BIG_ENDIAN], 0, [Is the current CPU is big-endian?]))
 
-# Translation support has been suspended because I could not get it to work. Any
-# help on the subject would be greatly appreciated.
-dnl # Translations support from Gettext.
-dnl AM_GNU_GETTEXT_VERSION([0.17])
-dnl AM_GNU_GETTEXT([external])
+# Translations support from Gettext.
+AM_GNU_GETTEXT_VERSION([0.17])
+AM_GNU_GETTEXT([external])
 
 # Export configurations.
 AC_CONFIG_FILES([Makefile man/Makefile doc/Makefile lib/Makefile src/Makefile])
