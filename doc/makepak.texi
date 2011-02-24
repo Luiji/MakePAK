@@ -50,6 +50,7 @@ This manual is for MakePAK (version @value{VERSION}, @value{UPDATED}).
 
 @menu
 * Overview:: General purpose and information.
+* History:: The story of MakePAK.
 * Invoking pak:: Invoking the MakePAK utility.
 * Reporting bugs:: Sending bug reports, feature suggestions, and patches.
 * GNU Free Documentation License:: Terms for copying this document.
@@ -64,6 +65,34 @@ This manual is for MakePAK (version @value{VERSION}, @value{UPDATED}).
 
 The MakePAK program (@url{http://github.com/Luiji/MakePAK/}) archives specified
 files into a single Quake .PAK archive.
+
+@node History
+@chapter History
+
+@cindex history
+@cindex quake
+@cindex physicsfs
+
+Quake was a first-person shooter released in 1996, which many say revolutionized
+the genre. Its engine -- the "Quake engine" -- read data from a custom
+uncompressed and indexed archive format with the .PAK file extension.
+
+In 2001, a free and open source project called @uref{http://icculus.org/physfs/,
+PhysicsFS} was created under the GNU Lesser General Public License (later
+re-licensed under the zLib license). It provided a highly-portable virtual
+filesystem interface with the handy capability to read ZIP and GRP files
+transparently. It quickly gained support for many other archive formats,
+including the Quake .PAK format in 2002.
+
+In 2010, I -- Luiji -- discovered PhysicsFS and began using it in my own video
+games. Initially, I used the .ZIP file format, but became annoyed. The
+compression ratio was lackluster because most of my files were .PNGs, which are
+already compressed. Double compression is, well, pointless, and wastes time. I
+looked into the other formats supported by PhysicsFS and fell in love with the
+Quake .PAK archive format.
+
+Sadly, I could not find any free software tools to create Quake .PAK archives.
+Thus, after a week's worth of work, MakePAK was born.
 
 @node Invoking pak
 @chapter Invoking @command{pak}
