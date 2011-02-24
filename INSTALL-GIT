@@ -1,0 +1,13 @@
+Installation Instructions for Git Checkouts
+*******************************************
+
+     Copyright (C) 2011 Entertaining Software, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  This file is offered as-is,
+     without any warranty.
+
+The Git tree does not provide generated files. Run './autogen.sh' to generate
+the build system. Afterwards, follow the instructions in 'INSTALL' (which is
+generated after './autogen.sh' is called).

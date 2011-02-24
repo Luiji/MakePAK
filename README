@@ -41,7 +41,8 @@ See 'FORMAT'.
 Installation
 ============
 
-See 'INSTALL'.
+If you are building a Git checkout or the 'INSTALL' file is missing, follow the
+instructions in 'INSTALL-GIT'. Otherwise, follow the instructions in 'INSTALL'.
 
 Authors
 =======
