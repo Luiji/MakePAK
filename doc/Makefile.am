@@ -16,5 +16,5 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
-info_TEXINFOS = pak.texi
-pak_TEXINFOS = fdl.texi
+info_TEXINFOS = makepak.texi
+makepak_TEXINFOS = fdl.texi
