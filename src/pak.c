@@ -67,7 +67,7 @@ struct input_file
 };
 
 /* argv[0]; name of the program given at the command-line */
-static const char *program_name;
+const char *program_name;
 /* whether or not to recursively add directories */
 static int recursive_flag = 0;
 /* whether or not to print each file as it is added */
