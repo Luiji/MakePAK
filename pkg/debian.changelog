@@ -1,5 +1,12 @@
+makepak (0.0.1-1) stable; urgency=low
+
+  * Update to 0.0.1. Only important fix is that it now compiles properly on
+    Windows and Mac OS X, which is not important to GNU/Linux systems.
+
+ -- Luiji Maryo <luiji@users.sourceforge.net>  Wed, 09 Mar 2011 18:58:58 -0500
+
 makepak (0.0.0-1) stable; urgency=low
 
   * Initial Release
 
- -- Luiji Maryo <luiji@users.sourceforge.net>  Sun, 13 Feb 2010 05:05:50 -0500
+ -- Luiji Maryo <luiji@users.sourceforge.net>  Sun, 13 Feb 2011 17:05:50 -0500
