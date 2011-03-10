@@ -28,7 +28,7 @@ case "x$1" in
     shift || true
     echo "Importing Gnulib..."
     gnulib-tool --import isdir dirent stdint stdio stdarg locale stdlib string \
-		xalloc realloc-gnu getopt-gnu vasprintf byteswap
+		xalloc realloc-gnu getopt-gnu vasprintf byteswap error
     echo "Configuring build system..."
     autoreconf --force --install --verbose
     echo "Generated build system.";;

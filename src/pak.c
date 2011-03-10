@@ -27,6 +27,7 @@
 #include <getopt.h>
 #include <isdir.h>
 #include <dirent.h>
+#include <error.h>
 #include <byteswap.h>
 
 /* truncate gettext to _ if gettext is supported, otherwise set _ to nothing */
@@ -105,8 +106,7 @@ die (char *format, ...)
   va_start (args, format);
   vasprintf (&message, format, args);
   va_end (args);
-  fprintf (stderr, "%s: %s\n", program_name, message);
-  exit (EXIT_FAILURE);
+  error (EXIT_FAILURE, 0, "%s", message);
 }
 
 /* print error message with file name and exit */
@@ -118,8 +118,7 @@ dief (char *filename, char *format, ...)
   va_start (args, format);
   vasprintf (&message, format, args);
   va_end (args);
-  fprintf (stderr, "%s: %s: %s\n", program_name, filename, message);
-  exit (EXIT_FAILURE);
+  error (EXIT_FAILURE, 0, "%s: %s", filename, message);
 }
 
 /* add input file */
