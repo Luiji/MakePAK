@@ -10,8 +10,8 @@ Priority: optional
 Description: MakePAK is a command-line tool for the creation of Quake .PAK files.
 Homepage: https://github.com/Luiji/MakePAK
 Files:
- c65793012d781e167b29974db44d1621 494764 makepak_0.0.1.orig.tar.gz
+ 233e72c8f5f95e880ada098474ed9fcd 534217 makepak_0.0.1.orig.tar.gz
 Checksums-Sha1:
- 04164dae7fa19dfb6fd3008b50abf93e7f53dae4 494764 makepak_0.0.1.orig.tar.gz
+ b14cd55ba25b3895ec2a8a52e1dd12b88e7eb51c 534217 makepak_0.0.1.orig.tar.gz
 Checksums-Sha256:
- 424fc59053388667cff0177d9fa0399a7e5f449f2e0d18e2264123653dbfcad3 494764 makepak_0.0.1.orig.tar.gz
+ 7c8fe023f5d17b188fdde1d73dc33348b1bd345da217efbdb1e6ae08aee74b5c 534217 makepak_0.0.1.orig.tar.gz

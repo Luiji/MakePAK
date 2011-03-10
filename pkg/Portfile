@@ -13,9 +13,9 @@ long_description     MakePAK is a command-line tool for the creation of Quake \
                      .PAK files.
 homepage             https://github.com/Luiji/MakePAK
 master_sites         https://github.com/downloads/Luiji/MakePAK/
-checksums            md5     c65793012d781e167b29974db44d1621 \
-                     sha1    04164dae7fa19dfb6fd3008b50abf93e7f53dae4 \
-                     rmd160  5ff6f9970fc539a2f6db1f53c6b203a486b495d5
+checksums            md5     233e72c8f5f95e880ada098474ed9fcd \
+                     sha1    b14cd55ba25b3895ec2a8a52e1dd12b88e7eb51c \
+                     rmd160  4d67df76c82c8ec9b60f473dacc3660d63ca6e73
 depends_build        port:texinfo
 use_parallel_build   yes
 
