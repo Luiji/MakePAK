@@ -3,7 +3,7 @@
 
 PortSystem           1.0
 name                 makepak
-version              0.0.1
+version              0.0.2
 categories           archivers
 platforms            darwin freebsd linux
 license              GPLv3+
@@ -13,9 +13,9 @@ long_description     MakePAK is a command-line tool for the creation of Quake \
                      .PAK files.
 homepage             https://github.com/Luiji/MakePAK
 master_sites         https://github.com/downloads/Luiji/MakePAK/
-checksums            md5     233e72c8f5f95e880ada098474ed9fcd \
-                     sha1    b14cd55ba25b3895ec2a8a52e1dd12b88e7eb51c \
-                     rmd160  4d67df76c82c8ec9b60f473dacc3660d63ca6e73
+checksums            md5     f825bc20e81be7448807ef3aba313735 \
+                     sha1    0c0d226e01a681bea800c121b54926030107efae \
+                     rmd160  0506955b9c851117678e959da8ed58fb10e275d6
 depends_build        port:texinfo
 use_parallel_build   yes
 

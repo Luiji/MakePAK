@@ -21,7 +21,7 @@
 %define _unpackaged_files_terminate_build 0
 
 %define name makepak
-%define version 0.0.1
+%define version 0.0.2
 %define release 1
 
 Name: %{name}
@@ -31,7 +31,7 @@ Summary: Tool for creating Quake .PAK files
 License: GPLv3+
 URL: https://github.com/Luiji/MakePAK
 Group: Productivity/Archiving/Backup
-Source0: https://github.com/downloads/Luiji/MakePAK/makepak-0.0.1.tar.gz
+Source0: https://github.com/downloads/Luiji/MakePAK/makepak-0.0.2.tar.gz
 BuildRequires: pkgconfig
 Requires(post): info
 Requires(preun): info
@@ -71,6 +71,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/pak
 
 %changelog
+* Mon Mar 21 2011 Luiji Maryo <luiji@users.sourceforge.net> - 0.0.2
+- Important bug fix: previously, the last byte was not output properly.
+- Various minor implementation changes.
+
 * Wed Mar 09 2011 Luiji Maryo <luiji@users.sourceforge.net> - 0.0.1
 - Only important fix is that it now compiles properly on Windows and Mac OS X,
   which is not important to GNU/Linux systems.
