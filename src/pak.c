@@ -152,7 +152,7 @@ add_file (char *filename)
   if (fseek (file, 0, SEEK_END))
     dief (filename, _("cannot get file size"));
 
-  size_t filesize = ftell (file) - 1;
+  size_t filesize = ftell (file);
 
   if (filesize > UINT32_MAX)
     dief (filename, _("file too big (limit 4 GiB)"));
@@ -353,7 +353,6 @@ main (int argc, char **argv)
 	fseek (file, 0, SEEK_SET);
 	while ((c = fgetc (file)) != EOF)
 	  fputc (c, output_file);
-	fseek (output_file, -1, SEEK_CUR);
 	if (fclose (file))
 	  dief (input_files[i].name, "cannot close stream");
       }
