@@ -17,7 +17,7 @@
 ################################################################################
 
 AC_PREREQ([2.65])
-AC_INIT([MakePAK], [0.0.1], [luiji@users.sourceforge.net],,
+AC_INIT([MakePAK], [0.0.2], [luiji@users.sourceforge.net],,
 	[http://github.com/Luiji/MakePAK/])
 AC_COPYRIGHT([Copyright (C) 2011 Entertaining Software, Inc.])
 AC_CONFIG_AUX_DIR([build-aux])
