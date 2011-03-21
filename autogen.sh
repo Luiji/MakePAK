@@ -24,14 +24,12 @@ name=`basename "$0"`
 
 case "x$1" in
   x)
-    echo "Generating build system..."
-    shift || true
     echo "Importing Gnulib..."
     gnulib-tool --import isdir dirent stdint stdio stdarg locale stdlib string \
-		xalloc realloc-gnu getopt-gnu vasprintf byteswap
+		xalloc realloc-gnu getopt-gnu vasprintf byteswap error
     echo "Configuring build system..."
     autoreconf --force --install --verbose
-    echo "Generated build system.";;
+    echo "You may now run ./configure.";;
 
   xhelp)
     echo "Usage: $name [ACTION]"
@@ -51,7 +49,7 @@ case "x$1" in
     if [ -f Makefile ]; then
       echo "Trying 'make maintainer-clean...'"
       if ! make maintainer-clean; then
-	echo "WARNING: 'make maintainer-clean' failed, continuing anyway..."
+	echo "WARNING: 'make maintainer-clean' failed; continuing anyway..."
       fi
     fi
     echo "Removing various generated files..."

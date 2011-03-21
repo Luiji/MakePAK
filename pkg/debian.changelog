@@ -1,3 +1,10 @@
+makepak (0.0.2-1) stable; urgency=high
+
+  * Important bug fix: previously, the last byte was not output properly.
+  * Various minor implementation changes.
+
+ -- Luiji Maryo <luiji@users.sourceforge.net>  Mon, 03 Mar 2011 17:18:40 -0500
+
 makepak (0.0.1-1) stable; urgency=low
 
   * Update to 0.0.1. Only important fix is that it now compiles properly on
