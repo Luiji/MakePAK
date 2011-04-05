@@ -1,6 +1,6 @@
 \input texinfo @c -*-texinfo-*-
 @c %**start of header
-@setfilename pak.info
+@setfilename makepak.info
 @include version.texi
 @settitle MakePAK @value{VERSION}
 @c op = options
@@ -27,7 +27,7 @@ Free Documentation License''.
 
 @dircategory Archiving
 @direntry
-* pak: (pak)Invoking pak.
+* pak: (makepak)Invoking pak.
 @end direntry
 
 @titlepage

@@ -23,11 +23,11 @@ makepak-*
 *~
 src/pak
 man/pak.1
-doc/pak.dvi
-doc/pak.pdf
-doc/pak.ps
-doc/pak.html
-doc/pak.info
+doc/makepak.dvi
+doc/makepak.pdf
+doc/makepak.ps
+doc/makepak.html
+doc/makepak.info
 doc/stamp-vti
 doc/version.texi
 
